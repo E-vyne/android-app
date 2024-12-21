@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailInput.getText().toString();
                 String password = passwordInput.getText().toString();
+
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 if (email.equals("user@example.com") && password.equals("password")) {
                     Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(MainActivity.this, ViewRecipesActivity.class));
