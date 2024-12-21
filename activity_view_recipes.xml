@@ -1,0 +1,13 @@
+<!-- Layout for View Recipes Activity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ac3d1a">
+
+    <ListView
+        android:id="@+id/recipesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

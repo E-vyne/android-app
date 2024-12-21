@@ -1,0 +1,38 @@
+<!-- Layout for Add Recipe Activity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ac3d1a">
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Title"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/ingredientsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredients"
+        android:layout_below="@id/titleInput"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/stepsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Steps"
+        android:layout_below="@id/ingredientsInput"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Recipe"
+        android:layout_below="@id/stepsInput"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
